@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+        <title>IDSTATS</title>
+        <style>
+            .a_tbdr{
+                border:1px dashed #000;
+            }
+            body{
+                background: #442460;
+                background-image: url('img/rabbit.svg');
+                background-repeat: no-repeat;
+                background-position: 100px 772px;
+            }
+            header{
+                height: 130px;
+            }
+            .a_main{
+                height: 900px;
+            }
+            footer{
+                height: 320px;
+            }
+            .a_header_nav > li > a{
+                padding: 61px 32px 20px 32px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .active{
+                background: #573a70;
+                color:#ffb900 !important;
+            }
+            .active:hover{
+                color:#ffb900;
+            }
+            .a_circle{
+                width: 37px;
+                height: 37px;
+                border-radius: 37px;
+                background: #744c97;
+            }
+            /*
+            .a_userlink{
+                color:#e8c8ed;
+            }
+            */
+            .a_header_nav > li:last-child > a{
+                color:#e8c8ed;
+            }
+            .myCollor h4{
+                font-family: 'Nunito', sans-serif;
+            }
+            .myCollor *{ /* Universal Selector */
+                color:#3e3d5f !important;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container p-0 a_container">
+            <header class="">
+                <a href="#" class="float-start mt-5">
+                    <img src="./img/logo2.png" height="30">
+                </a>
+                <ul class="nav float-end a_header_nav" >
+                    <li class="nav-item">
+                      <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white " href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Our Plans</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Tools &amp; Resources</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link position-relative a_userlink" href="#"><span class="d-inline-block a_circle position-absolute top-50 start-0" style="left:-10px !important"></span> Nidhi Bokadiya <i class="fas fa-chevron-down"></i></a>
+                    </li>
+                  </ul>
+            </header>
+            <div class="a_main a_tbdr">
+
+            </div>
+            <footer class="a_tbdr bg-white">
+                <div class="row m-0">
+                    <div class="col-5 a_tbdr myCollor">
+                        <h4>FEATURES</h4>
+                        <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Beginers Guide</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Tools and Resources</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="col-7 a_tbdr">B</div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-5 a_tbdr">A</div>
+                    <div class="col-7 a_tbdr">B</div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </body>
+</html>
