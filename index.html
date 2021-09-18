@@ -15,10 +15,11 @@
                 border:1px dashed #000;
             }
             body{
-                background: #442460;
-                background-image: url('img/rabbit.svg');
-                background-repeat: no-repeat;
-                background-position: 100px 772px;
+                background-image: url('img/rabbit.svg'),url("img/Footer.svg"),url("img/Purple.svg"),url("img/Orange.svg");
+                background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
+                background-size: auto,1600px 800px,1600px 800px;
+                background-position:100px 660px,-40px 660px, -32px -32px,-40px 200px;
+            
             }
             header{
                 height: 130px;
@@ -27,7 +28,6 @@
                 min-height: 900px;
             }
             footer{
-                min-height: 320px;
             }
             .a_header_nav > li > a{
                 padding: 61px 32px 20px 32px;
@@ -47,11 +47,11 @@
                 border-radius: 37px;
                 background: #744c97;
             }
-            /*
+        
             .a_userlink{
-                color:#e8c8ed;
+                color:#fff !important;
             }
-            */
+        
             .a_header_nav > li:last-child > a{
                 color:#e8c8ed;
             }
@@ -79,31 +79,53 @@
                 height: 252px;
                 background: #5264bb;
             }
+
+
+
+            @media screen and (max-width: 992px){
+                .a_header_nav{
+                    background: #573a70 !important;
+                }
+                .a_header_nav a{
+                    padding-left: 30px !important;
+                    border-bottom:1px solid #744c97 ;
+                    border-radius: 0px !important;
+                }
+            }
         </style>
     </head>
     <body>
         <div class="container p-0 a_container">
             <header class="">
-                <a href="#" class="float-start mt-5">
-                    <img src="./img/logo2.png" height="30">
-                </a>
-                <ul class="nav float-end a_header_nav" >
-                    <li class="nav-item">
-                      <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white " href="#">Service</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Our Plans</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Tools &amp; Resources</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link position-relative a_userlink pe-0" href="#"><span class="d-inline-block a_circle position-absolute top-50 start-0" style="left:-10px !important"></span> Nidhi Bokadiya <i class="fas fa-chevron-down"></i></a>
-                    </li>
-                  </ul>
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img src="./img/logo2.png" height="30">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse d-flex justify-content-end row m-0" id="navbarNav">
+                        <ul class="navbar-nav a_header_nav float-end col-12 col-sm-12 col-md-12 col-lg-5 pe-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Service</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Our Plans</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Our Plans</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link position-relative a_userlink pe-0" href="#"><span class="d-inline-block a_circle position-absolute top-50 start-0" style="left:-10px !important"></span> Nidhi Bokadiya <i class="fas fa-chevron-down"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </nav>
             </header>
             <div class="a_main  text-white">
                 <h1>Welcome Nidhi Bokadiya</h1>   
@@ -129,7 +151,7 @@
                     </div>
                 </div>
             </div>
-            <footer class=" bg-white myCollor">
+            <footer class="myCollor">
                 <div class="row m-0 mb-5">
                     <div class="col-5">
                         <h4 class="fw-bold">FEATURES</h4>
