@@ -15,14 +15,24 @@
                 border:1px dashed #000;
             }
             body{
+                background-color:#F3F3F3;
                 background-image: url('img/rabbit.svg'),url("img/Footer.svg"),url("img/Purple.svg"),url("img/Orange.svg");
                 background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
                 background-size: auto,1600px 800px,1600px 800px;
-                background-position:100px 660px,-40px 660px, -32px -32px,-40px 200px;
+                background-position:100px 660px,-40px 660px, -32px -40px,-40px 200px;
             
             }
             header{
-                height: 130px;
+                min-height: 130px;
+            }
+            .fa-bars{
+              color:#fff !important;
+            }
+            header .navbar-toggler{
+              border:1px solid #fff !important;
+            }
+            .navbar-toggler:focus{
+              box-shadow: none !important;
             }
             .a_main{
                 min-height: 900px;
@@ -30,7 +40,7 @@
             footer{
             }
             .a_header_nav > li > a{
-                padding: 61px 32px 20px 32px;
+                padding: 61px 32px 20px 32px !important;
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
             }
@@ -62,7 +72,7 @@
                 color:#3e3d5f !important;
             }
             .a_panel{
-                height: 220px;
+                min-height: 220px;
                 background: #424d83;
             }
             .a_panel:hover{
@@ -76,18 +86,18 @@
             .a_panel1_c1{
                 /* transition: property duration timing-function delay|initial|inherit; */
                 transition: all .2s linear ;
-                height: 252px;
+                min-height: 252px;
                 background: #5264bb;
+                text-align: center;
             }
-
-
-
+            .dropdown-toggle::after {
+                display:none;
+            }
             @media screen and (max-width: 992px){
                 .a_header_nav{
                     background: #573a70 !important;
                 }
                 .a_header_nav a{
-                    padding-left: 30px !important;
                     border-bottom:1px solid #744c97 ;
                     border-radius: 0px !important;
                 }
@@ -97,57 +107,93 @@
     <body>
         <div class="container p-0 a_container">
             <header class="">
-                <nav class="navbar navbar-expand-lg navbar-light ">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#">
-                        <img src="./img/logo2.png" height="30">
-                      </a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse d-flex justify-content-end row m-0" id="navbarNav">
-                        <ul class="navbar-nav a_header_nav float-end col-12 col-sm-12 col-md-12 col-lg-5 pe-0">
-                          <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Service</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Our Plans</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Our Plans</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link position-relative a_userlink pe-0" href="#"><span class="d-inline-block a_circle position-absolute top-50 start-0" style="left:-10px !important"></span> Nidhi Bokadiya <i class="fas fa-chevron-down"></i></a>
-                          </li>
+              <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="./img/logo2.png" height="30">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <div class="mx-auto "></div>
+                    <ul class="navbar-nav mb-2 mb-lg-0 a_header_nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Service</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Our Plans</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Tools &amp; Resources</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle a_userlink" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                          <span class="d-inline-block a_circle "></span>
+                          <span class="position-relative" style="top:-13px;">Nidhi Bokadiya <i class="fas fa-chevron-down"></i></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                      </div>
-                    </div>
-                </nav>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
             </header>
-            <div class="a_main  text-white">
+            <div class="a_main  text-white p-3">
                 <h1>Welcome Nidhi Bokadiya</h1>   
                 <p>How can i help you ?</p>   
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>   
                 <div class="row m-0">
-                    <div class="col-12 col-sm-3 mb-3">
+                    <div class="col-12 col-md-6 col-lg-3 mb-3">
                         <div class="rounded rounded-3 a_panel a_panel1 p-3">
                             <img src="img/launch.svg">
                             <h3 class="mb-4">Innovation Decision Hub</h3>
-                            <div class="a_panel1_c1 d-none">A</div>
-                            <a href="#" class="float-end text-white text-decoration-none">Learn More <i class="fas fa-chevron-right ms-1"></i></a>
+                            <div class="a_panel1_c1 d-none">
+                              <img class="img-fluid" src="./img/e1.png" >
+                            </div>
+                            <a href="#" class="float-end text-white text-decoration-none mt-2">Learn More <i class="fas fa-chevron-right ms-1"></i></a>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-3 mb-3">
-                        <div class="rounded rounded-3 a_panel a_panel2">A</div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-3">
+                        <div class="rounded rounded-3 a_panel a_panel2 p-3">
+                          <img src="img/launch.svg">
+                          <h3 class="mb-4">Innovation Decision Hub</h3>
+                          <div class="a_panel1_c1 d-none">
+                            <img class="img-fluid" src="./img/e2.png" >
+                          </div>
+                          <a href="#" class="float-end text-white text-decoration-none mt-2">Learn More <i class="fas fa-chevron-right ms-1"></i></a>
+                      
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-3 mb-3">
-                        <div class="rounded rounded-3 a_panel a_panel3">A</div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-3">
+                        <div class="rounded rounded-3 a_panel a_panel3 p-3">
+                          <img src="img/launch.svg">
+                            <h3 class="mb-4">Innovation Decision Hub</h3>
+                            <div class="a_panel1_c1 d-none">
+                              <img class="img-fluid" src="./img/e3.png" >
+                            </div>
+                            <a href="#" class="float-end text-white text-decoration-none mt-2">Learn More <i class="fas fa-chevron-right ms-1"></i></a>
+                        
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-3 mb-3">
-                        <div class=" rounded rounded-3 a_panel a_panel4">A</div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-3">
+                        <div class=" rounded rounded-3 a_panel a_panel4 p-3">
+                          <img src="img/launch.svg">
+                            <h3 class="mb-4">Innovation Decision Hub</h3>
+                            <div class="a_panel1_c1 d-none">
+                              <img class="img-fluid" src="./img/e4.png" >
+                            </div>
+                            <a href="#" class="float-end text-white text-decoration-none mt-2">Learn More <i class="fas fa-chevron-right ms-1"></i></a>
+                        
+                        </div>
                     </div>
                 </div>
             </div>
